@@ -2,9 +2,14 @@
     <div class="logo">wikikode;</div>
     <nav>
         <ul class="top-menu">
-            <li (click)="about()">ABOUT</li>
-            <li (click)="about()">ABOUT</li>
-            <li (click)="about()">ABOUT</li>
+            <li routerLink="/home" routerLinkActive="active">
+                <div class="name">Home</div>
+                <div class="line"></div>
+            </li>
+            <li routerLink="/about" routerLinkActive="active">
+                <div class="name">About</div>
+                <div class="line"></div>
+            </li>
         </ul>
     </nav>
 </header>

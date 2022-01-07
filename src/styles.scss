@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-inline: 2%;
+    // background-color: #f4f4f0;
+    background-color: var(--primary);
+    font-family: Comfortaa;
+    color: var(--secondary);
+}

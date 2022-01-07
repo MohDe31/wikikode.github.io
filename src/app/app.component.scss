@@ -4,7 +4,52 @@ header {
     align-items: flex-end;
     height: 56px;
 
+    margin-bottom: 5%;
+
+
     place-items: center;
+
+    nav{
+        height: 100%;
+        li {
+            display: flex;
+            flex-direction: column;
+            //justify-content: space-evenly;
+            justify-content: center;
+            gap: 20%;
+            height: 100%;
+
+
+            .name {
+                font-size: larger;
+                font-family: Comfortaa;
+                font-weight: 400;
+            }
+
+            .line {
+                border-bottom: 1px solid var(--secondary);
+                border-width: 0px;
+                width: 100%;
+            }
+
+            @keyframes line-animation {
+                0% {
+                    width: 0px;
+                }
+
+                100% {
+                    width: 100%;
+                }
+            }
+        }
+        li:hover{
+            cursor: pointer;
+            .line {
+                animation: line-animation 1s;
+                border-width: 1px;
+            }
+        }
+    }
 }
 
 nav {

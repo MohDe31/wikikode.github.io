@@ -1,0 +1,37 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 200px;
+    height: fit-content;
+
+    gap: 5px;
+
+    .thumbnail {
+        img {
+            width:  200px;
+            height: 200px;
+        }
+    }
+
+    .type {
+        width: fit-content;
+        font-size: 80%;
+        color: #aaa;
+    }
+    
+    .title {
+        overflow-wrap: break-word;
+        padding-bottom: 3%;
+    }
+
+    .date {
+        color: #aaa;
+        font-size: 80%;
+    }
+
+    :hover {
+        cursor: pointer;
+    }
+}
