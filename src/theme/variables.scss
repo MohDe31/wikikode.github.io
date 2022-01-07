@@ -1,9 +1,11 @@
 body {
     --primary: #eee;
     --secondary: #111111;
+    --invert: invert(0);
 }
 
 .dark {
     --primary: #222;
     --secondary: #eee;
+    --invert: invert(1); 
 }

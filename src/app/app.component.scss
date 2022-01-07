@@ -9,6 +9,16 @@ header {
 
     place-items: center;
 
+    .theme-toggle{
+        img {
+            filter: var(--invert);
+        }
+
+        :hover {
+            cursor: pointer;
+        }
+    }
+
     nav{
         height: 100%;
         li {

@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,12 +6,17 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'wikikode';
+  constructor() {}
 
-  constructor(private router: Router) {}
+  toggleDarkMode(){
+    const isDark = document.body.classList.contains("dark");
+    
+    if(isDark){
+      document.body.classList.remove("dark");
+      return;
+    }
 
-
-  about(){
-    this.router.navigate(['/about']);
+    document.body.classList.add("dark");
+    
   }
 }
