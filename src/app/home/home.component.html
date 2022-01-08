@@ -1,12 +1,8 @@
-<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 1%;">
-    <article-webcard dataurl="about" title="A* Algorithm" type="Path finding" imgsrc="https://www.redblobgames.com/thumbnail/line-drawing.png?2018-12-22-07-42-43"></article-webcard>
-    <article-webcard dataurl="about" title="A* Algorithm" type="Path finding" imgsrc="https://www.redblobgames.com/thumbnail/line-drawing.png?2018-12-22-07-42-43"></article-webcard>
-    <article-webcard dataurl="about" title="A* Algorithm" type="Path finding" imgsrc="https://www.redblobgames.com/thumbnail/line-drawing.png?2018-12-22-07-42-43"></article-webcard>
-    <article-webcard dataurl="about" title="A* Algorithm" type="Path finding" imgsrc="https://www.redblobgames.com/thumbnail/line-drawing.png?2018-12-22-07-42-43"></article-webcard>
-    <article-webcard dataurl="about" title="A* Algorithm" type="Path finding" imgsrc="https://www.redblobgames.com/thumbnail/line-drawing.png?2018-12-22-07-42-43"></article-webcard>
-    <article-webcard dataurl="about" title="A* Algorithm" type="Path finding" imgsrc="https://www.redblobgames.com/thumbnail/line-drawing.png?2018-12-22-07-42-43"></article-webcard>
-    <article-webcard dataurl="about" title="A* Algorithm" type="Path finding" imgsrc="https://www.redblobgames.com/thumbnail/line-drawing.png?2018-12-22-07-42-43"></article-webcard>
-    <article-webcard dataurl="about" title="A* Algorithm" type="Path finding" imgsrc="https://www.redblobgames.com/thumbnail/line-drawing.png?2018-12-22-07-42-43"></article-webcard>
-    <article-webcard dataurl="about" title="A* Algorithm" type="Path finding" imgsrc="https://www.redblobgames.com/thumbnail/line-drawing.png?2018-12-22-07-42-43"></article-webcard>
-    <article-webcard dataurl="about" title="A* Algorithm" type="Path finding" imgsrc="https://www.redblobgames.com/thumbnail/line-drawing.png?2018-12-22-07-42-43"></article-webcard>
+<div class="card-container">
+    <article-webcard 
+                    *ngFor="let entry of articleService.getAllArticles()" 
+                    dataurl="article/{{entry.link}}" title="{{entry.title}}" 
+                    type="{{entry.type}}" 
+                    imgsrc="{{entry.image}}">
+    </article-webcard>
 </div>

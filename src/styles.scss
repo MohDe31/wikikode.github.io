@@ -11,3 +11,9 @@ body {
     font-family: Comfortaa;
     color: var(--secondary);
 }
+
+@media only screen and (max-width: 600px) {
+    body{
+        margin-inline: 0%;
+    }
+}
